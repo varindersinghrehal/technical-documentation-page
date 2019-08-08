@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!---->
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Technical Documentation</title>
+</head>
+<body>
+        <nav id="navbar">
+          <header>React</header>
+         <ul>  
+              <a class="nav-link" href="#Learn_React" rel="Internal"><li>Learn React</li></a>
+              <a class="nav-link" href="#Component_Based" rel="Internal"><li>Component-Based</li></a>
+              <a class="nav-link" href="#Declarative" rel="Internal"><li>Declarative</li></a>
+              <a class="nav-link" href="#Developer_Tools" rel="Internal"><li>Developer Tools</li></a>
+              <a class="nav-link" href="#Flex_Basis" rel="Internal"><li>React Basic Hooks</li></a>
+            
+              </ul>
+              </nav>
+        <main id="main-doc">
+          <section class="main-section" id="Learn_React">
+            <header>Learn React</header>
+            <p>People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.</p>
+            <p>If you prefer to learn by doing, start with our practical tutorial.</p>
+                <p>If you prefer to learn concepts step by step, start with our guide to main concepts.</p>
+                <p>Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
+
+</p>
+          </section>
+            <section class="main-section" id="Component_Based">
+              <header>Component-Based</header>
+              <p>Build encapsulated components that manage their own state, then compose them to make complex UIs.<p>
+              <p>Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.</p>
+                  <img class="irc_mi" src="https://miro.medium.com/max/1400/1*PwN5b1n2bkjtErs5AC09Kg.png" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Image result for basic-react.svg" width="750" height="359" style="" data-iml="1565113373201">
+                  <p>We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.</p>
+                  <ul>
+                      <li><strong>simple component</strong> - React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.</li>
+                      <li><strong>jsx react</strong> - Try the Babel REPL to see the raw JavaScript code produced by the JSX compilation step.</li>
+                      <li><strong>stateful component</strong> - In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state). When a component’s state data changes, the rendered markup will be updated by re-invoking render()</li>
+                      <li><strong>an application</strong> - Using props and state, we can put together a small Todo application. This example uses state to track the current list of items as well as the text that the user has entered. </li>
+                     
+                  </ul>
+                    </div>
+          </section>
+        
+        <section class="main-section" id="Declarative">
+                <header>Declarative</header>
+                <div class="row">
+                  <div class="column1">
+                  <code class="language-javascript"><span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>MyOtherComponent <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">}</span></code>
+                    
+                    <p style="text-align:center; font-weight:bold; font-size: 1.6rem">React build big, fast Web apps.<br>(JavaScript)</p>
+                      
+                      <div class="purple1">
+                        <p1><strong>React Element</strong></p1>
+                        <p>which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write.</p>                     
+                        <code class="customcode">   class Board extends React.Component {<br>  
+                                    return <Square value={i} />;<br>                         {
+                        	
+                      </code>
+                      <p>&nbsp;&nbsp;replacing {/* TODO */} with {this.props.value}:</p>
+                      </div>
+                     <div class="purple2">
+                       <p><strong>Next Player X</strong></p>
+                      <img src="https://daveceddia.com/images/home-monitor-highlighted.png" alt="The app with stateful parts highlighted" class="center">
+                       <p>Let’s fill the Square component with an “X” when we click it. First, change the button tag that is returned from the Square component’s render() function to this:</p>
+                       <code class="customcode">  var : player = {score: 1, name: 'Jeff'};<br>   
+                          player.score = 2;<br>
+                    // Now player is {score: 2, name: 'Jeff'}
+
+               </code>
+               <div class="colorful">
+               <p
+               ><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">value :</span> passed the value prop down <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">X</span>; determined by Square’s own state <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">X</span><br>
+               <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">value-reverse</span>: Square currently ignores the value <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">X</span>; passed to it by the Board. <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">X</span><br>
+               <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">array</span>: same as <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">row</span> but top to bottom<br>
+               <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">array-reverse</span>: same as <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">value-reverse</span> but bottom to top</p>
+                     </div>
+                    </div>
+                    <div class="purple2">
+                        <p><strong>Developer Tools</strong></p>
+                       <code class="language-javascript"><span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span></code>
+                        <p>The React Devtools extension for Chrome and Firefox lets you inspect a React component tree with your browser’s developer tools.</p>
+                        <code class="customcode">   render() {<br>   
+                           const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');<br>
+                    return ( <br>                         
+                    // the rest has not changed
+                </code>
+                <div class="colorful">
+                <p
+                ><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">DevTools</span> the props and the state of your React components.<br> 
+                <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">installing </span>: right-click on any element on the page, click “Inspect” to open the developer tools,<br>
+                <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">CodePen:</span>: Log in or register and confirm your email (required to prevent spam).
+                 
+              
+                      </div>
+                     </div>
+                     <div class="purple2">
+                        <p><strong>Taking Turns</strong></p>
+                        <p>Fix an obvious defect in our  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">tic-tac.</span> and <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">toe game</span> he “O”s cannot be marked on the board. By default first move to be<span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;"> “X”</span>.</p>
+                        <code class="customcode">  class Board extends React.Component {<br>   
+                     constructor(props) {<br>super(props);<br> };<br>}
+                </code>
+                     </div>
+                     <div class="purple3">
+                        <p><strong>What React State Looks Like</strong></p>
+                      <img src="https://daveceddia.com/images/home-monitor.png" alt="A home monitor app" class="center">
+                        <p>Now we can gave these things names (time, power usage, indoor temperature, outdoor temperature), and describe them with a JavaScript object like this:</p>
+                        <code class="customcode">  class App extends React.Component {<br>   
+                         constructor(props) {<br>
+                     super(props); <br>                         
+                   &#125;
+               </code>
+               <div class="colorful">
+                  <p
+                  ><span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">“container components"</span> The best way to do this is to keep state in the “container” components, and keep it out of the “presentational” ones.
+                  <br> 
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">Redux</span>: If you are using Redux, you actually will have one big state object that describes the entire app<br>
+                  <span style="background: linear-gradient(to right,#fce4ed,#ffe8cc); padding: .3rem; border-radius: 3px;">Redux does:</span>: one huge object represents the app’s state, and then reducers and mapStateToProps carve it up into pieces relevant to each component.</a><br>
+                  
+  
+                
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column2">
+                   <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">children</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>someImportantState<span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+                    <p style="text-align:center; font-weight:bold; font-size: 1.6rem">Return other components<br>(function invocations)</p>
+                    <div id="green">
+                      <img src="https://daveceddia.com/images/visual-state-guide.png" alt="A Visual Guide to React State" class="center">
+                    
+                    <p>First off, the word “state” is a little ambiguous. In one sense, “state” means the current visual representation of the app on screen. It could be in a “loading” state, or it could be in an “error” state.</p>
+                    <code class="customcode">currentTime: "2016-10-12T22:25:42.564Z",<br>  
+                        power: {<br>
+                  min: 0,<br> 
+                      
+                 &#125;
+             </code>
+            </div>
+            <section class="main-section" id="Flex_Grow">
+              <header>Pure React</header>
+                <img class="book-cover" src="https://daveceddia.com/images/pure-react-3d-cover.svg" alt="Pure React cover">
+              
+              <p>My comprehensive course on building apps with React and Redux covers everything. Starting from the basics of how Redux works, and how to work with immutability, the first module gets you going. </p>
+              <p>In the second module we build a complete app from scratch, with React + Redux, Reach Router, API calls, authentication, and even role-based access control.</p>
+              <code class="customcode">class Square extends React.Component {<br>  
+                  constructor(props) {<br>
+            super(props); 
+                <br> };
+           &#125;
+       </code>
+       <p>The this.state.squares array.</p>
+    </section>
+      <div id="orange">
+          <p><strong>Render Square</strong></p>
+          <p>The Board to show numbers from 0 to 8 in every Square. </p>
+          <code class="customcode">[<br>  
+            'O', null, 'X',<br>
+        'X', 'X', 'O',<br>
+            'O', null, null,<br> 
+       ]
+   </code>
+   <p>this.state.squares array look like this</p>
+  </div>
+  <section class="main-section" id="Flex_Basis">
+  <header>React Basic Hooks
+</header>
+      <p>Returns a stateful value, and a function to update it.
+
+During the initial render, the returned state (state) is the same as the value passed as the first argument (initialState).
+
+The setState function is used to update the state. It accepts a new state value and enqueues a re-render of the component.</p>
+      <code class="customcode">const [state, setState] = useState(initialState);<br>  
+          setState(newState);<br>
+    const [count, setCount] = useState(initialCount);<br>  );                        
+   &#125;
+</code>
+<p>The ”+” and ”-” buttons use the functional form, because the updated value is based on the previous value. But the “Reset” button uses the normal form, because it always sets the count back to the initial value.</a></p>
+
+</section>
+<div id="orange">
+    <p><strong>React Crash Course 2018 </strong></p>
+  <iframe width="450" height="290" src="https://www.youtube.com/embed/Ke90Tje7VS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>A beginner-friendly crash course through the most important React topics.</p>
+    <code class="customcode">ReactDOM.render(<br>  
+        sprout={0.03}<br>
+ sway={0}<br>
+       />,<br>
+      document.getElementById('app')<br>
+ )
+</code>
+<p><strong>What You’ll Build</strong> By the end of this guide, you’ll have built your own animated fractal tree. Here’s a sneak peak – you can start the animation by clicking the button, and you can even change the animation by editing the two blue numbers.</p>
+</div>
+                  </div>
+                </div>
+      </section>
+     <footer>
+</footer>
+         </main>
+</body>
+</html>
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- partial -->
+  
+</body>
+</html>
